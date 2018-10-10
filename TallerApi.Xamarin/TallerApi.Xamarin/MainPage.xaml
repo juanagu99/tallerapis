@@ -4,8 +4,7 @@
              xmlns:local="clr-namespace:TallerApi.Xamarin"
              x:Class="TallerApi.Xamarin.MainPage">
 
-    <StackLayout>
-        <!-- Place new controls here -->
+    <StackLayout>     
         <Label Text="Welcome to Xamarin.Forms!" 
            HorizontalOptions="Center"
            VerticalOptions="CenterAndExpand" />

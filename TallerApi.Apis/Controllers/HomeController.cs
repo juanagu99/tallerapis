@@ -10,7 +10,7 @@ namespace TallerApi.Apis.Controllers
     {
         public ActionResult Index()
         {
-            ViewBag.Title = "Home Page";
+            ViewBag.Title = "Mi pagina";
 
             return View();
         }
