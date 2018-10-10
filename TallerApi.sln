@@ -1,0 +1,41 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28010.2016
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TallerApi.Xamarin.Android", "TallerApi.Xamarin\TallerApi.Xamarin.Android\TallerApi.Xamarin.Android.csproj", "{DBFBAEFD-4E24-48D0-A11D-289B0BC15117}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TallerApi.Xamarin", "TallerApi.Xamarin\TallerApi.Xamarin\TallerApi.Xamarin.csproj", "{FF1D3E17-92DF-43D6-A4CB-02F011BEEAEF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TallerApi.Apis", "TallerApi.Apis\TallerApi.Apis.csproj", "{0E4D9E86-B1D9-4A27-B115-2C29A32739E2}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DBFBAEFD-4E24-48D0-A11D-289B0BC15117}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DBFBAEFD-4E24-48D0-A11D-289B0BC15117}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DBFBAEFD-4E24-48D0-A11D-289B0BC15117}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{DBFBAEFD-4E24-48D0-A11D-289B0BC15117}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DBFBAEFD-4E24-48D0-A11D-289B0BC15117}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DBFBAEFD-4E24-48D0-A11D-289B0BC15117}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{FF1D3E17-92DF-43D6-A4CB-02F011BEEAEF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FF1D3E17-92DF-43D6-A4CB-02F011BEEAEF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FF1D3E17-92DF-43D6-A4CB-02F011BEEAEF}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{FF1D3E17-92DF-43D6-A4CB-02F011BEEAEF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FF1D3E17-92DF-43D6-A4CB-02F011BEEAEF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FF1D3E17-92DF-43D6-A4CB-02F011BEEAEF}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{0E4D9E86-B1D9-4A27-B115-2C29A32739E2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0E4D9E86-B1D9-4A27-B115-2C29A32739E2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0E4D9E86-B1D9-4A27-B115-2C29A32739E2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0E4D9E86-B1D9-4A27-B115-2C29A32739E2}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C8FAC794-DF5D-4199-9681-8D5E40A7501E}
+	EndGlobalSection
+EndGlobal
