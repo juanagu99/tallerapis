@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TallerApi.Xamarin.Views.PublicacionPage">
+
+    <StackLayout>
+        <ListView x:Name="listpublicaciones" ItemSelected="Item_Selected" >
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <!--binding es enlazar y a aqui se enlaza con las propiedades autocontenidas del modelo-->
+                    <ImageCell ImageSource=""
+                               Text="{Binding Usuario}"
+                               Detail="{Binding FechaPublicacion}"
+                               TextColor="Black"
+                               DetailColor="Gray"
+                               />
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+    </StackLayout>
+    
+</ContentPage>

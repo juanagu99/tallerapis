@@ -11,7 +11,6 @@ namespace TallerApi.Apis.Controllers
         public ActionResult Index()
         {
             ViewBag.Title = "Mi pagina";
-
             return View();
         }
     }
