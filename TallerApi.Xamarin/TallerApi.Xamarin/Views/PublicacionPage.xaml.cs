@@ -25,7 +25,7 @@ namespace TallerApi.Xamarin.Views
             HttpClient cliente = new HttpClient();
             cliente.BaseAddress = new Uri("http://192.168.1.8");
             //ahora hacemos la peticion
-            var request = cliente.GetAsync("/api/Publicacion").Result; // ->metodo para obtener la informacion que me trajo el metodo get y me devuelvve un objeto de tipo producto en json
+            var request = cliente.GetAsync("PrimerApi/api/Publicacion").Result; // ->metodo para obtener la informacion que me trajo el metodo get y me devuelvve un objeto de tipo producto en json
             if (request.IsSuccessStatusCode) //si el request se ejecuta bien y es verdadero cuando me devuelve un status 200
             {
                 var responseJSON = request.Content.ReadAsStringAsync().Result; //obtenemos la respueta del servidor si el request se ejecuta bien; se obtiene como un string
