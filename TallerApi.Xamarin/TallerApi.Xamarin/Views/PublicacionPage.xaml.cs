@@ -20,15 +20,15 @@ namespace TallerApi.Xamarin.Views
             CargarProductos();
         }
 
-        public void CargarProductos()
+        public async void CargarProductos()
         {
             HttpClient cliente = new HttpClient();
             cliente.BaseAddress = new Uri("http://192.168.1.8");
             //ahora hacemos la peticion
-            var request = cliente.GetAsync("PrimerApi/api/Publicacion").Result; // ->metodo para obtener la informacion que me trajo el metodo get y me devuelvve un objeto de tipo producto en json
+            var request = await cliente.GetAsync("/PrimerApi/api/Publicacion"); // ->metodo para obtener la informacion que me trajo el metodo get y me devuelvve un objeto de tipo producto en json
             if (request.IsSuccessStatusCode) //si el request se ejecuta bien y es verdadero cuando me devuelve un status 200
             {
-                var responseJSON = request.Content.ReadAsStringAsync().Result; //obtenemos la respueta del servidor si el request se ejecuta bien; se obtiene como un string
+                var responseJSON = await request.Content.ReadAsStringAsync(); //obtenemos la respueta del servidor si el request se ejecuta bien; se obtiene como un string
                 //para poder comvertirlo a jsson formato tengo que agregar el paquete de Newtonsoft.Jsone incluir su libreria
                 var respuesta = JsonConvert.DeserializeObject<List<Publicacion>>(responseJSON); //dserializando el objeto json: significa que estamos llevando el json a string
                 listpublicaciones.ItemsSource = respuesta;
