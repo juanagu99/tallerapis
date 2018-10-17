@@ -8,7 +8,7 @@
         <ListView x:Name="listpublicaciones" ItemSelected="Item_Selected" >
             <ListView.ItemTemplate>
                 <DataTemplate>
-                    <!--binding es enlazar y a aqui se enlaza con las propiedades autocontenidas del modelo
+                   binding es enlazar y a aqui se enlaza con las propiedades autocontenidas del modelo
                     <ImageCell ImageSource=""
                                Text="{Binding Usuario}"
                                Detail="{Binding FechaPublicacion}"
