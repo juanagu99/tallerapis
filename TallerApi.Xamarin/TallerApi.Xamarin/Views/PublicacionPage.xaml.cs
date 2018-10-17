@@ -23,7 +23,7 @@ namespace TallerApi.Xamarin.Views
         public async void CargarProductos()
         {
             HttpClient cliente = new HttpClient();
-            cliente.BaseAddress = new Uri("http://192.168.1.8");
+            cliente.BaseAddress = new Uri("http://192.168.1.81"); //puedo poner : http ://mitiendaapis.azurewebsites.net
             //ahora hacemos la peticion
             var request = await cliente.GetAsync("/PrimerApi/api/Publicacion"); // ->metodo para obtener la informacion que me trajo el metodo get y me devuelvve un objeto de tipo producto en json
             if (request.IsSuccessStatusCode) //si el request se ejecuta bien y es verdadero cuando me devuelve un status 200

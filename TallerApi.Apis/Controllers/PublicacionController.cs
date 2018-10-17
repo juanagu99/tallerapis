@@ -12,6 +12,12 @@ namespace TallerApi.Apis.Controllers
 {
     public class PublicacionController : ApiController
     {
+        public IEnumerable<Publicacion> Get() {
+            using (var context = new PublicacionContext ) {
+                return context.Publicaciones.ToList();
+            }
+        }
+
         [HttpGet] //lo usamos para buscar
         public Publicacion Get(int id) 
         {
